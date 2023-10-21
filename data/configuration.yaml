@@ -1,0 +1,428 @@
+homeassistant:
+  legacy_triggers: false
+permit_join: false
+mqtt:
+  base_topic: zigbee2mqtt_garage
+  server: mqtt://192.168.0.12
+  user: mqtt-user
+  password: VKNKv85;]y4[XUgG
+  keepalive: 60
+  reject_unauthorized: true
+  version: 5
+  include_device_information: false
+serial:
+  port: tcp://garage-coordinator.local:6638
+  baudrate: 115200
+  disable_led: false
+frontend:
+  port: 8081
+advanced:
+  pan_id: 420
+  channel: 25
+  network_key:
+    - 2
+    - 0
+    - 7
+    - 10
+    - 4
+    - 2
+    - 0
+    - 7
+    - 1
+    - 0
+    - 4
+    - 20
+    - 7
+    - 1
+    - 10
+    - 4
+  homeassistant_legacy_entity_attributes: false
+  legacy_api: false
+  legacy_availability_payload: false
+  log_syslog:
+    app_name: Zigbee2MQTT-garage
+    eol: /n
+    host: localhost
+    localhost: localhost
+    path: /dev/log
+    pid: process.pid
+    port: 51
+    protocol: udp4
+    type: '5424'
+  last_seen: ISO_8601_local
+  output: json
+  log_level: info
+  transmit_power: 9
+  adapter_delay: 0
+  adapter_concurrent: 16
+  ext_pan_id:
+    - 237
+    - 221
+    - 219
+    - 221
+    - 221
+    - 218
+    - 221
+    - 221
+  log_symlink_current: true
+device_options:
+  legacy: false
+  qos: 2
+  homeassistant:
+    last_seen:
+      enabled_by_default: false
+    battery_low:
+      enabled_by_default: false
+    linkquality:
+      enabled_by_default: true
+    current:
+      enabled_by_default: true
+devices:
+  '0x282c02bfffeb6799':
+    friendly_name: Garage-Door-Opener-Outlet
+    homeassistant:
+      name: Garage Door Opener Outlet
+    legacy: false
+    optimistic: true
+    qos: 2
+    retain: true
+    retention: 300
+    state_action: false
+    power_calibration: 0
+    current_calibration: 0
+    power_precision: 0
+    current_precision: 0
+    voltage_calibration: 0
+    voltage_precision: 0
+    energy_precision: 0
+    energy_calibration: 0
+  '0x282c02bfffeb2ad8':
+    friendly_name: Garage-Workbench-Light
+    homeassistant:
+      name: Garage Workbench Light
+      battery_low:
+        enabled_by_default: false
+      current:
+        enabled_by_default: true
+      last_seen:
+        enabled_by_default: false
+      linkquality:
+        enabled_by_default: true
+    legacy: false
+    optimistic: true
+    qos: 2
+    retain: true
+    retention: 300
+    state_action: false
+  '0x282c02bfffeb47a7':
+    friendly_name: Automower-Charging-Station-Outlet
+    homeassistant:
+      name: AUTOMOWER® 115H Charging Station Outlet
+      battery_low:
+        enabled_by_default: false
+      current:
+        enabled_by_default: true
+      last_seen:
+        enabled_by_default: false
+      linkquality:
+        enabled_by_default: true
+    legacy: false
+    optimistic: true
+    qos: 2
+    retain: true
+    retention: 30
+  '0x282c02bfffeb4b21':
+    friendly_name: Garage-Back-Room-Light
+    homeassistant:
+      name: Garage Back Room Light
+      battery_low:
+        enabled_by_default: false
+      current:
+        enabled_by_default: true
+      last_seen:
+        enabled_by_default: false
+      linkquality:
+        enabled_by_default: true
+    legacy: false
+    optimistic: true
+    qos: 2
+    retain: true
+    retention: 300
+  '0x282c02bfffeb2bed':
+    friendly_name: Garage-Work-Area-Light
+    homeassistant:
+      name: Garage Work Area Light
+      battery_low:
+        enabled_by_default: false
+      current:
+        enabled_by_default: true
+      last_seen:
+        enabled_by_default: false
+      linkquality:
+        enabled_by_default: true
+    legacy: false
+    optimistic: true
+    qos: 2
+    retain: true
+    retention: 300
+    state_action: false
+  '0x54ef4410004b4743':
+    friendly_name: Garage-Main-Lights
+    homeassistant:
+      name: Garage Main Lights
+      battery_low:
+        enabled_by_default: false
+      current:
+        enabled_by_default: true
+      last_seen:
+        enabled_by_default: false
+      linkquality:
+        enabled_by_default: true
+    legacy: false
+    optimistic: true
+    qos: 2
+    retain: true
+    retention: 300
+    state_action: false
+  '0x282c02bfffe84183':
+    friendly_name: Garage-Motion-Sensor-South
+    homeassistant:
+      name: Garage Motion Sensor (South)
+      battery_low:
+        enabled_by_default: false
+      current:
+        enabled_by_default: true
+      last_seen:
+        enabled_by_default: false
+      linkquality:
+        enabled_by_default: true
+    legacy: false
+    optimistic: true
+    qos: 2
+    retain: true
+    retention: 300
+  '0x282c02bfffe82d91':
+    friendly_name: Garage-Motion-Sensor-West
+    homeassistant:
+      name: Garage Motion Sensor (West)
+      battery_low:
+        enabled_by_default: false
+      current:
+        enabled_by_default: true
+      last_seen:
+        enabled_by_default: false
+      linkquality:
+        enabled_by_default: true
+    legacy: false
+    optimistic: true
+    retain: true
+    retention: 300
+    qos: 0
+  '0x282c02bfffe8537e':
+    friendly_name: Garage-Motion-Sensor-Back-Room
+    homeassistant:
+      name: Garage Motion Sensor (Back Room)
+      battery_low:
+        enabled_by_default: false
+      current:
+        enabled_by_default: true
+      last_seen:
+        enabled_by_default: false
+      linkquality:
+        enabled_by_default: true
+    legacy: false
+    optimistic: true
+    qos: 2
+    retain: true
+    retention: 300
+  '0x282c02bfffe85d21':
+    friendly_name: Garage-Motion-Sensor-Work-Area
+    homeassistant:
+      name: Garage Motion Sensor (Work Area)
+      battery_low:
+        enabled_by_default: false
+      current:
+        enabled_by_default: true
+      last_seen:
+        enabled_by_default: false
+      linkquality:
+        enabled_by_default: true
+    legacy: false
+    optimistic: true
+    qos: 2
+    retain: true
+    retention: 300
+  '0xb0ce18140352ebfd':
+    friendly_name: Driveway-Light
+    homeassistant:
+      name: Driveway Light
+    legacy: false
+    optimistic: true
+    qos: 2
+    retain: true
+    retention: 300
+    disabled: false
+    color_sync: false
+    state_action: false
+  '0x282c02bfffe857fa':
+    friendly_name: Garage-Motion-Sensor-East
+    homeassistant:
+      name: Garage Motion Sensor (East)
+      battery_low:
+        enabled_by_default: false
+      current:
+        enabled_by_default: true
+      last_seen:
+        enabled_by_default: false
+      linkquality:
+        enabled_by_default: true
+    legacy: false
+    optimistic: true
+    qos: 2
+    retain: true
+    retention: 300
+  '0x000d6f00111e7845':
+    friendly_name: Garage-Side-Door
+    homeassistant:
+      name: Garage Side Door
+    legacy: false
+    optimistic: true
+    qos: 2
+    retain: true
+    retention: 300
+  '0x000d6f000ea5c8ab':
+    friendly_name: Main-Garage-Door-Open-Sensor
+    homeassistant:
+      name: Main Garage Door Open Sensor
+      battery_low:
+        enabled_by_default: false
+      current:
+        enabled_by_default: true
+      last_seen:
+        enabled_by_default: false
+      linkquality:
+        enabled_by_default: true
+    legacy: false
+    optimistic: true
+    retain: true
+    retention: 60
+    qos: 2
+  '0x00124b0024c2c513':
+    friendly_name: Garage-Router-North
+    homeassistant:
+      name: Garage Router (North)
+      battery_low:
+        enabled_by_default: false
+      current:
+        enabled_by_default: true
+      last_seen:
+        enabled_by_default: false
+      linkquality:
+        enabled_by_default: true
+    legacy: false
+    optimistic: true
+    qos: 2
+    retain: true
+    retention: 300
+  '0x00124b00246df035':
+    friendly_name: Automower-Side-Yard-Boundary-Wire
+    homeassistant:
+      battery_low:
+        enabled_by_default: false
+      current:
+        enabled_by_default: true
+      last_seen:
+        enabled_by_default: false
+      linkquality:
+        enabled_by_default: true
+      name: AUTOMOWER® 115H Side Yard Boundary Wire
+    legacy: false
+    optimistic: true
+    qos: 2
+    retain: true
+    retention: 300
+    state_action: false
+  '0xe0798dfffebb3bbd':
+    friendly_name: Garage-Button
+    homeassistant:
+      battery_low:
+        enabled_by_default: false
+      current:
+        enabled_by_default: true
+      last_seen:
+        enabled_by_default: false
+      linkquality:
+        enabled_by_default: true
+      name: Garage Button
+    legacy: false
+    optimistic: true
+    qos: 2
+  '0x000d6f0010b09fe5':
+    friendly_name: Main-Garage-Door-Closed-Sensor
+    homeassistant:
+      battery_low:
+        enabled_by_default: false
+      current:
+        enabled_by_default: true
+      last_seen:
+        enabled_by_default: false
+      linkquality:
+        enabled_by_default: true
+      name: Main Garage Door Closed Sensor
+    legacy: false
+    optimistic: true
+    qos: 2
+    retain: true
+    retention: 60
+  '0x00124b00246df7bf':
+    friendly_name: Garage-Door-Opener
+    homeassistant:
+      battery_low:
+        enabled_by_default: false
+      current:
+        enabled_by_default: true
+      last_seen:
+        enabled_by_default: false
+      linkquality:
+        enabled_by_default: true
+      name: Garage Door Opener
+    legacy: false
+    optimistic: true
+    qos: 2
+    retain: true
+    retention: 60
+  '0x000d6f0010b0a3db':
+    friendly_name: Secondary-Garage-Door-Closed-Sensor
+    homeassistant:
+      battery_low:
+        enabled_by_default: false
+      current:
+        enabled_by_default: true
+      last_seen:
+        enabled_by_default: false
+      linkquality:
+        enabled_by_default: true
+      name: Secondary Garage Door Closed Sensor
+    legacy: false
+    optimistic: true
+    qos: 2
+    retain: true
+    retention: 30
+  '0x000d6f00104a9676':
+    friendly_name: Secondary-Garage-Door-Open-Sensor
+    homeassistant:
+      battery_low:
+        enabled_by_default: false
+      current:
+        enabled_by_default: true
+      last_seen:
+        enabled_by_default: false
+      linkquality:
+        enabled_by_default: true
+      name: Secondary Garage Door Open Sensor
+    legacy: false
+    optimistic: true
+    qos: 2
+    retain: true
+    retention: 30
+availability: true
