@@ -11,11 +11,11 @@ mqtt:
   version: 5
   include_device_information: false
 serial:
-  port: tcp://garage-coordinator.local:6638
+  port: tcp://garage-coordinator.home:6638
   baudrate: 115200
   disable_led: false
 frontend:
-  port: 8081
+  port: 8080
 advanced:
   pan_id: 420
   channel: 25
@@ -262,8 +262,9 @@ devices:
     retain: true
     retention: 300
     disabled: false
-    color_sync: false
+    color_sync: true
     state_action: false
+    transition: 1
   '0x282c02bfffe857fa':
     friendly_name: Garage-Motion-Sensor-East
     homeassistant:
@@ -426,3 +427,4 @@ devices:
     retain: true
     retention: 30
 availability: true
+groups: {}
