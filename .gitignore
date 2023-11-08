@@ -2,3 +2,4 @@ data/database.db
 data/database.db.backup
 data/log/
 data/state.json
+data/secret.yaml

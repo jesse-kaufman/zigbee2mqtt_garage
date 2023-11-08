@@ -3,9 +3,9 @@ homeassistant:
 permit_join: false
 mqtt:
   base_topic: zigbee2mqtt_garage
-  server: mqtt://192.168.0.12
+  server: mqtt://mqtt.home
   user: mqtt-user
-  password: VKNKv85;]y4[XUgG
+  password: "!secret.yaml password"
   keepalive: 60
   reject_unauthorized: true
   version: 5
@@ -15,7 +15,7 @@ serial:
   baudrate: 115200
   disable_led: false
 frontend:
-  port: 8080
+  port: 80
 advanced:
   pan_id: 420
   channel: 25
@@ -48,7 +48,7 @@ advanced:
     pid: process.pid
     port: 51
     protocol: udp4
-    type: '5424'
+    type: "5424"
   last_seen: ISO_8601_local
   output: json
   log_level: info
@@ -78,7 +78,7 @@ device_options:
     current:
       enabled_by_default: true
 devices:
-  '0x282c02bfffeb6799':
+  "0x282c02bfffeb6799":
     friendly_name: Garage-Door-Opener-Outlet
     homeassistant:
       name: Garage Door Opener Outlet
@@ -96,7 +96,7 @@ devices:
     voltage_precision: 0
     energy_precision: 0
     energy_calibration: 0
-  '0x282c02bfffeb2ad8':
+  "0x282c02bfffeb2ad8":
     friendly_name: Garage-Workbench-Light
     homeassistant:
       name: Garage Workbench Light
@@ -114,7 +114,7 @@ devices:
     retain: true
     retention: 300
     state_action: false
-  '0x282c02bfffeb47a7':
+  "0x282c02bfffeb47a7":
     friendly_name: Automower-Charging-Station-Outlet
     homeassistant:
       name: AUTOMOWER® 115H Charging Station Outlet
@@ -131,7 +131,7 @@ devices:
     qos: 2
     retain: true
     retention: 30
-  '0x282c02bfffeb4b21':
+  "0x282c02bfffeb4b21":
     friendly_name: Garage-Back-Room-Light
     homeassistant:
       name: Garage Back Room Light
@@ -148,7 +148,7 @@ devices:
     qos: 2
     retain: true
     retention: 300
-  '0x282c02bfffeb2bed':
+  "0x282c02bfffeb2bed":
     friendly_name: Garage-Work-Area-Light
     homeassistant:
       name: Garage Work Area Light
@@ -166,7 +166,7 @@ devices:
     retain: true
     retention: 300
     state_action: false
-  '0x54ef4410004b4743':
+  "0x54ef4410004b4743":
     friendly_name: Garage-Main-Lights
     homeassistant:
       name: Garage Main Lights
@@ -184,7 +184,7 @@ devices:
     retain: true
     retention: 300
     state_action: false
-  '0x282c02bfffe84183':
+  "0x282c02bfffe84183":
     friendly_name: Garage-Motion-Sensor-South
     homeassistant:
       name: Garage Motion Sensor (South)
@@ -201,7 +201,7 @@ devices:
     qos: 2
     retain: true
     retention: 300
-  '0x282c02bfffe82d91':
+  "0x282c02bfffe82d91":
     friendly_name: Garage-Motion-Sensor-West
     homeassistant:
       name: Garage Motion Sensor (West)
@@ -218,7 +218,7 @@ devices:
     retain: true
     retention: 300
     qos: 0
-  '0x282c02bfffe8537e':
+  "0x282c02bfffe8537e":
     friendly_name: Garage-Motion-Sensor-Back-Room
     homeassistant:
       name: Garage Motion Sensor (Back Room)
@@ -235,7 +235,7 @@ devices:
     qos: 2
     retain: true
     retention: 300
-  '0x282c02bfffe85d21':
+  "0x282c02bfffe85d21":
     friendly_name: Garage-Motion-Sensor-Work-Area
     homeassistant:
       name: Garage Motion Sensor (Work Area)
@@ -252,7 +252,7 @@ devices:
     qos: 2
     retain: true
     retention: 300
-  '0xb0ce18140352ebfd':
+  "0xb0ce18140352ebfd":
     friendly_name: Driveway-Light
     homeassistant:
       name: Driveway Light
@@ -265,7 +265,7 @@ devices:
     color_sync: true
     state_action: false
     transition: 1
-  '0x282c02bfffe857fa':
+  "0x282c02bfffe857fa":
     friendly_name: Garage-Motion-Sensor-East
     homeassistant:
       name: Garage Motion Sensor (East)
@@ -282,7 +282,7 @@ devices:
     qos: 2
     retain: true
     retention: 300
-  '0x000d6f00111e7845':
+  "0x000d6f00111e7845":
     friendly_name: Garage-Side-Door
     homeassistant:
       name: Garage Side Door
@@ -291,7 +291,7 @@ devices:
     qos: 2
     retain: true
     retention: 300
-  '0x000d6f000ea5c8ab':
+  "0x000d6f000ea5c8ab":
     friendly_name: Main-Garage-Door-Open-Sensor
     homeassistant:
       name: Main Garage Door Open Sensor
@@ -308,7 +308,7 @@ devices:
     retain: true
     retention: 60
     qos: 2
-  '0x00124b0024c2c513':
+  "0x00124b0024c2c513":
     friendly_name: Garage-Router-North
     homeassistant:
       name: Garage Router (North)
@@ -325,7 +325,7 @@ devices:
     qos: 2
     retain: true
     retention: 300
-  '0x00124b00246df035':
+  "0x00124b00246df035":
     friendly_name: Automower-Side-Yard-Boundary-Wire
     homeassistant:
       battery_low:
@@ -343,7 +343,7 @@ devices:
     retain: true
     retention: 300
     state_action: false
-  '0xe0798dfffebb3bbd':
+  "0xe0798dfffebb3bbd":
     friendly_name: Garage-Button
     homeassistant:
       battery_low:
@@ -358,7 +358,7 @@ devices:
     legacy: false
     optimistic: true
     qos: 2
-  '0x000d6f0010b09fe5':
+  "0x000d6f0010b09fe5":
     friendly_name: Main-Garage-Door-Closed-Sensor
     homeassistant:
       battery_low:
@@ -375,7 +375,7 @@ devices:
     qos: 2
     retain: true
     retention: 60
-  '0x00124b00246df7bf':
+  "0x00124b00246df7bf":
     friendly_name: Garage-Door-Opener
     homeassistant:
       battery_low:
@@ -392,7 +392,7 @@ devices:
     qos: 2
     retain: true
     retention: 60
-  '0x000d6f0010b0a3db':
+  "0x000d6f0010b0a3db":
     friendly_name: Secondary-Garage-Door-Closed-Sensor
     homeassistant:
       battery_low:
@@ -409,7 +409,7 @@ devices:
     qos: 2
     retain: true
     retention: 30
-  '0x000d6f00104a9676':
+  "0x000d6f00104a9676":
     friendly_name: Secondary-Garage-Door-Open-Sensor
     homeassistant:
       battery_low:

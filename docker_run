@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 docker run \
-    --name z2m_garage \
+    --name z2m-garage \
     --restart=unless-stopped \
-    -p 8082:8080 \
+    --ip 192.168.0.17 \
+	--dns 192.168.0.13 \
+    --network slacknet-0 \
     -v ./data:/app/data \
     -v /run/udev:/run/udev:ro \
     -e TZ=America/Chicago \
-	-d \
+    -d \
     koenkk/zigbee2mqtt
